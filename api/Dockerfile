@@ -6,6 +6,7 @@ COPY api.csproj .
 RUN dotnet restore
 
 COPY . .
+RUN dotnet --version
 RUN dotnet publish -o /publish
 
 # Runtime Image Stage
