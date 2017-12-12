@@ -1,5 +1,5 @@
 # Build Stage
-FROM microsoft/aspnetcore-build:2 AS build-env
+FROM microsoft/aspnetcore-build:latest AS build-env
 WORKDIR /api
 
 COPY api.csproj .
