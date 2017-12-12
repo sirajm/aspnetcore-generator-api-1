@@ -4,7 +4,7 @@ WORKDIR /api
 
 COPY api.csproj .
 RUN dotnet restore
-
+RUN dotnet --version
 COPY . .
 RUN dotnet --version
 RUN dotnet publish -o /publish
